@@ -11,6 +11,7 @@ import resumeData from './resumeData';
 import { Footer } from './components/footer/footer';
 function App() {
   return (
+    <HashRouter basename="https://singh1029.github.io/portfolio/">
     <div className="App">
       <Header resumeData={resumeData}/>
       <Resume/>
@@ -18,8 +19,8 @@ function App() {
       <Testimonials/>
       <Contactus/>
       <Footer resumeData={resumeData}/>
-
     </div>
+    </HashRouter>
   );
 }
 
